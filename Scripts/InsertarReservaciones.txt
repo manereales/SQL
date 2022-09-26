@@ -1,0 +1,8 @@
+CREATE PROCEDURE pr_InsertarReservacion(@idlibro int, @idusuario int, @fechaInicio datetime, @fechaEntrega datetime)
+
+AS
+BEGIN
+	insert into Reservaciones (LibrosId, UsuariosId, FechaPrestamo_Reservaciones, FechaDevolucion_Reservaciones)
+	values (@idlibro, @idusuario, @fechaInicio, @fechaEntrega)
+END
+GO

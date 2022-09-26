@@ -1,0 +1,8 @@
+CREATE PROCEDURE pr_InsertarUsuario(@carnet int, @nombre varchar(50))
+
+AS
+BEGIN
+	insert into Usuario(Carnet_Usuario, Nombre_Usuario)
+	values (@carnet, @nombre)
+END
+GO
