@@ -1,0 +1,19 @@
+create table Libro (
+	Id int primary key identity (1,1),
+	Titulo_Libro varchar(50),
+	Cantidad_Libro int,
+);
+
+create table Usuario(
+	Id int primary key identity(1,1),
+	Carnet_Usuario int,
+	Nombre_Usuario varchar(50)
+);
+
+create table Reservaciones(
+	Id int primary key identity(1,1),
+	LibrosId int,
+	UsuariosId int,
+	FechaPrestamo_Reservaciones datetime,
+	FechaDevolucion_Reservaciones datetime
+);
